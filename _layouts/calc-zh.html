@@ -3,13 +3,14 @@
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <title>{{ site.title_zh }} ({{ page.calc }}-{{ page.timeV }})</title>
+<link rel="canonical" href="https://app.tlo.xyz{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />
 <script>
 repeatTime={{ page.timeR }};
 culcType="{{ page.calc }}";
 textLength={{ page.length }};
 slugend="-zh";
 </script>
-<link href="main.css" rel="stylesheet" type="text/css"/>
+<link href="{{ site.cdnurl }}{{ site.baseurl }}/main.css" rel="stylesheet" type="text/css"/>
 <meta name="viewport" content="width=device-width" />
 </head>
 <body>
@@ -39,10 +40,10 @@ slugend="-zh";
 <div id="more">
 	<a href="{{ site.baseurl }}/about-zh.html">关于</a> — <a href="{{ site.baseurl }}/index-zh.html">所有版本</a> — <a href="{{ site.baseurl }}/lang.html">Languages</a> — <a href="https://git.tlo.xyz/TLOXYZ/Guess-What-I-Said">查看源代码</a>
 </div>
-<script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="lang/zh.js"></script>
-<script type="text/javascript" charset="utf-8" src="main.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/encoding-indexes.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/encoding.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/lang/zh.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/js/encoding-indexes.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/js/encoding.js"></script>
 </body>
 </html>
