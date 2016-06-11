@@ -1,0 +1,85 @@
+body {
+	background-color: #f1f1f1;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container { margin: 50px auto 40px auto; text-align: center; max-width: 600px; }
+
+a { color: #4183c4; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1 { position:relative; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
+p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
+
+#more {
+	margin-top: 35px;
+	color: #ccc;
+}
+#more a {
+	color: #666666;
+	font-weight: 200;
+	font-size: 14px;
+	margin: 0 10px;
+}
+.hash { margin-bottom: 0; }
+.hero {
+	color: #000;
+	font-weight: bold;
+}
+
+progress {
+	width:200px;
+	max-width: 80%;
+	display:none;
+}
+
+textarea {
+	font-size: 15px;
+	width: 100%;
+	clear: both;
+	margin: auto;
+	border: 0;
+	background-color: #f1f1f1;
+	text-align: center;
+	resize: none !important;
+	font-family: monospace;
+}
+
+input {
+	clear: both;
+	font-size: 1.5em;
+	margin: auto;
+	width: 200px;
+	max-width: 50vw;
+	border: 0;
+	background-color:
+	#f1f1f1; border-bottom:
+	2px solid #a2a2a2;
+	text-align: center;
+	margin-top: 2em;
+}
+
+li { list-style-type:none; }
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	h1 {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: 30px;
+	}
+}

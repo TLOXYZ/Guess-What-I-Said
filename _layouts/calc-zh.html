@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html style="margin-left:6.67%; margin-right:6.67%;">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>{{ site.title_zh }} ({{ page.calc }}-{{ page.timeV }})</title>
+<script>
+repeatTime={{ page.timeR }};
+culcType="{{ page.calc }}";
+textLength={{ page.length }};
+slugend="-zh";
+</script>
+<link href="main.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<div class="container">
+
+<h1>{{ site.title_zh }}</h1>
+
+<p style="margin: 0;">算法：{{ page.calc }}-{{ page.timeV }}</p>
+
+<input id="guessInput" type="text" name="url" placeholder="说一些…" onchange="doOnchange()">
+<p>注意: 对大小写不敏感，一些符号会被忽视。</p>
+<progress value="0" max="1" id="calcProgress"></progress>
+<p style="display:none;" id="right" class="hero">正确！你猜出了我说的。</p>
+<p style="display:none;" id="wrong" class="hero">不对！请重新猜。</p>
+<p style="display:none;" class="guessHash"><a href="{{ site.baseurl }}{{ page.permalink }}">也让别人猜猜你想说的</a></p>
+<p style="display:none;" class="notice hero">完成！分享此页来让别人来猜。</p>
+<p style="display:none;" class="notice">如果你想说其他的，只需重新输入。</p>
+<p style="display:none;" class="guessHash hash">我所说的内容的哈希值：</p>
+<textarea style="display: none;" rows="2" class="guessHash guessHashText" readonly="readonly"></textarea>
+<p style="display:none;" class="notice hash">你所说的内容的哈希值：</p>
+<p style="display:none;" class="guessedHash hash">你所猜的内容的哈希值：</p>
+<textarea rows="2" id="result" readonly="readonly"></textarea>
+
+<p>你所说的或猜的内容不会被传输，非常安全。</p>
+
+<div id="more">
+	<a href="{{ site.baseurl }}/about-zh.html">关于</a> — <a href="{{ site.baseurl }}/index-zh.html">所有版本</a> — <a href="{{ site.baseurl }}/lang.html">Languages</a> — <a href="https://git.tlo.xyz/TLOXYZ/Guess-What-I-Said">查看源代码</a>
+</div>
+<script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="lang/zh.js"></script>
+<script type="text/javascript" charset="utf-8" src="main.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/encoding-indexes.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/encoding.js"></script>
+</body>
+</html>

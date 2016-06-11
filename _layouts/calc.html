@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html style="margin-left:6.67%; margin-right:6.67%;">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>{{ site.title }} ({{ page.calc }}-{{ page.timeV }})</title>
+<script>
+repeatTime={{ page.timeR }};
+culcType="{{ page.calc }}";
+textLength={{ page.length }};
+slugend="";
+</script>
+<link href="main.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<div class="container">
+
+<h1>{{ site.title }}</h1>
+
+<p style="margin: 0;">Algorithm: {{ page.calc }}-{{ page.timeV }}</p>
+
+<input id="guessInput" type="text" name="url" placeholder="Say Something…" onchange="doOnchange()">
+<p>NOTE: Not case sensitive, some symbol will be ignored.</p>
+<progress value="0" max="1" id="calcProgress"></progress>
+<p style="display:none;" id="right" class="hero">Right! You guessed what I say.</p>
+<p style="display:none;" id="wrong" class="hero">Wrong! Pleace guess again.</p>
+<p style="display:none;" class="guessHash"><a href="{{ site.baseurl }}{{ page.permalink }}">Also let others guess what you want to say</a></p>
+<p style="display:none;" class="notice hero">Done! Share this page to your friends so they can guess.</p>
+<p style="display:none;" class="notice">If you want to say another, just retype above.</p>
+<p style="display:none;" class="guessHash hash">The hash of what I say:</p>
+<textarea style="display: none;" rows="2" class="guessHash guessHashText" readonly="readonly"></textarea>
+<p style="display:none;" class="notice hash">The hash of what you say:</p>
+<p style="display:none;" class="guessedHash hash">The hash what you guessed:</p>
+<textarea rows="2" id="result" readonly="readonly"></textarea>
+
+<p>What you said or guess is never transmitted and very safe.</p>
+
+<div id="more">
+	<a href="{{ site.baseurl }}/about.html">About</a> — <a href="{{ site.baseurl }}/index.html">All Versions</a> — <a href="{{ site.baseurl }}/lang.html">Languages</a> — <a href="https://git.tlo.xyz/TLOXYZ/Guess-What-I-Said">View Source</a>
+</div>
+<script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="lang/en.js"></script>
+<script type="text/javascript" charset="utf-8" src="main.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/encoding-indexes.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/encoding.js"></script>
+</body>
+</html>

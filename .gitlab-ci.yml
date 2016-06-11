@@ -1,0 +1,7 @@
+pages:
+  stage: deploy
+  script:
+  - mkdir -p /var/www/site/app/Guess-What-I-Said
+  - nice jekyll build --incremental -d /var/www/site/app/Guess-What-I-Said
+  only:
+  - master
