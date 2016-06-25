@@ -1,7 +1,10 @@
+---
+layout: default
+title: About
+permalink: /about.html
+---
 Guess What I Say
 ===============
-[![build status](https://git.tlo.xyz/TLOxyz/Guess-What-I-Said/badges/master/build.svg)](https://git.tlo.xyz/TLOxyz/Guess-What-I-Said/builds)
-
 Enter what you want to say and it will generate salt, calculate the hash over and over again via Web Cryptography API. What you said is never transmitted and very save, because it only generate in your own browser.
 
 ## Algorithm
