@@ -4,8 +4,9 @@
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <link rel="canonical" href="https://app.tlo.xyz{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />
-<link href="{{ site.cdnurl }}{{ site.baseurl }}/main.css" rel="stylesheet" type="text/css"/>
+<link href="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/main.css" rel="stylesheet" type="text/css"/>
 <meta name="viewport" content="width=device-width" />
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/js/jquery.min.js"></script>
 </head>
 <body>
 
@@ -18,10 +19,12 @@
 <div id="more">
 	<a href="{{ site.baseurl }}/about{% if page.slug %}-{{ page.slug }}{% endif %}.html">{% if page.about %}{{ page.about }}{% else %}About{% endif %}</a> — <a href="{{ site.baseurl }}/index{% if page.slug %}-{{ page.slug }}{% endif %}.html">{% if page.versions %}{{ page.versions }}{% else %}All Versions{% endif %}</a> — <a href="{{ site.baseurl }}/lang.html">Languages</a> — <a href="https://github.com/TLOxyz/Guess-What-I-Said">GitHub</a>
 </div>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/js/jquery.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/lang/{% if page.slug %}{{ page.slug }}{% else %}en{% endif %}.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/main.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/js/encoding-indexes.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/js/encoding.js"></script>
+
+</div>
+
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/lang/{% if page.slug %}{{ page.slug }}{% else %}en{% endif %}.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/js/encoding-indexes.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/js/encoding.js"></script>
 </body>
 </html>

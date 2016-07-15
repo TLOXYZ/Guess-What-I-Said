@@ -60,7 +60,7 @@ input {
 	margin-top: 2em;
 }
 
-li { list-style-type:none; }
+li { list-style-type:none; margin: 0.2em 0em 0.2em 0; }
 ul {
 	margin: 0;
 	padding: 0;

@@ -10,8 +10,9 @@ culcType="{{ page.calc }}";
 textLength={{ page.length }};
 slugend="-zh";
 </script>
-<link href="{{ site.cdnurl }}{{ site.baseurl }}/main.css" rel="stylesheet" type="text/css"/>
+<link href="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/main.css" rel="stylesheet" type="text/css"/>
 <meta name="viewport" content="width=device-width" />
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/js/jquery.min.js"></script>
 </head>
 <body>
 
@@ -40,10 +41,12 @@ slugend="-zh";
 <div id="more">
 	<a href="{{ site.baseurl }}/about-zh.html">关于</a> — <a href="{{ site.baseurl }}/index-zh.html">所有版本</a> — <a href="{{ site.baseurl }}/lang.html">Languages</a> — <a href="https://github.com/TLOxyz/Guess-What-I-Said">GitHub</a>
 </div>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/js/jquery.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/lang/zh.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/main.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/js/encoding-indexes.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/js/encoding.js"></script>
+
+</div>
+
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/lang/zh.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/js/encoding-indexes.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ site.cdnurl }}{{ site.baseurl }}/{{ site.version }}/js/encoding.js"></script>
 </body>
 </html>

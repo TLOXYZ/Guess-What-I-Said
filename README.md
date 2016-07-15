@@ -1,4 +1,4 @@
-Guess What I Say
+Guess What I Said
 ===============
 [![build status](https://git.tlo.xyz/TLOxyz/Guess-What-I-Said/badges/master/build.svg)](https://git.tlo.xyz/TLOxyz/Guess-What-I-Said/builds)
 
