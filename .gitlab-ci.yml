@@ -1,9 +1,8 @@
 pages:
   stage: deploy
-  before_script: 
-  - 'git push --force --mirror git@github.com:TLOxyz/Guess-What-I-Said.git'
   script:
   - mkdir -p /var/www/site/app/Guess-What-I-Said
   - nice jekyll build --incremental -d /var/www/site/app/Guess-What-I-Said
+  - sshpass -p $SSHPASS ssh tlo@localhost "cd $PWD; git push --force --mirror git@github.com:TLOxyz/Guess-What-I-Said.git ;"
   only:
   - master
