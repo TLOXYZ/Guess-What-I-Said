@@ -2,5 +2,5 @@ title: Guess What I Said
 title_zh: 猜猜我说了什么
 markdown: kramdown
 baseurl: "/Guess-What-I-Said" # the subpath of your site, e.g. /blog
-cdnurl: "https://cdn.landcement.com/app"
+cdnurl: "https://cdn.tlo.link/app"
 version: "v0.1"
